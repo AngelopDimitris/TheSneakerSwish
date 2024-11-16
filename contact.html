@@ -9,15 +9,6 @@
         <meta name="author" content="SneakerSwish">
         <link rel="stylesheet" href="styles.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CBS59E5NL2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CBS59E5NL2');
-</script>
 <body>
     <header>
         <div>
@@ -27,8 +18,14 @@
         <nav>
             <ul class="navbar">
                 <li><a href="index.html" class="homepage">Home</a></li>
-                <li><a href="collections.html" class="collectionspage">Collections</a>
-                <li><a href="#contact.html" class="contactpage">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="collections.html" class="dropbtn">Collections</a>
+                        <div class="dropdown-content">
+                            <a href="collections.html">Basketball Shoes</a>
+                            <a href="collections.html#LifestyleSneakers">Lifestyle Sneakers</a>
+                        </div>
+                    </li>
+                <li><a href="contact.html" class="contactpage">Contact Us</a></li>
                 <li><a href="contact.html" class="SignUpbutton">Sign Up </a></li>
             </ul>
         </nav>
@@ -37,22 +34,24 @@
         </blockquote>
     </header>
     <main class="communication">
-    <h2 class="heads">Let's keep in touch</h2>
+    <blockquote class="slogan">
+        <p>Let's keep in touch</p>
+    </blockquote>
     <section>
     <div class="form-box">
     <h3>Feedback Form</h3>
     <form action="#" method="post">
-    <label for="first-name" class="formation">First Name:</label>
-    <input type="text" id="first-name" name="first-name" required>
+    <label for="first-name-feedback" class="formation">First Name:</label>
+    <input type="text" id="first-name-feedback" name="First" required>
 
-    <label for="last-name" class="formation">Last Name:</label>
-    <input type="text" id="last-name" name="last-name" required>
+    <label for="last-name-feedback" class="formation">Last Name:</label>
+    <input type="text" id="last-name-feedback" name="Last" required>
 
-    <label for="email" class="formation">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <label for="email-feedback" class="formation">Email:</label>
+    <input type="email" id="email-feedback" name="emailaddress" required>
 
     <label for="rating" class="formation">Rate our website:</label>
-    <select id="rating" name="rating" required>
+    <select id="rating" name="ratingform" required>
         <option value="">Select...</option>
         <option value="excellent">Excellent</option>
         <option value="very-good">Very Good</option>
@@ -62,42 +61,45 @@
     </select>
     <button type="submit" class="submission">Submit Review</button>
     </form>
+    </div>
     </section>
         <section>
             <div class="form-box">
             <h3>Contact Us</h3>
             <form action="#" method="post">
-                <label for="first-name" class="formation">First Name:</label>
-                <input type="text" id="first-name" name="first-name" required>
+                <label for="first-name-contact" class="formation">First Name:</label>
+                <input type="text" id="first-name-contact" name="First" required>
             
-                <label for="last-name" class="formation">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" required>
+                <label for="last-name-contact" class="formation">Last Name:</label>
+                <input type="text" id="last-name-contact" name="Last" required>
             
-                <label for="email" class="formation">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email-contact" class="formation">Email:</label>
+                <input type="email" id="email-contact" name="emailaddress" required>
             
                 <label for="question" class="formation">Your Question:</label>
                 <textarea id="question" name="question" rows="4" required></textarea>
             
                 <button type="submit" class="submission">Submit Question</button>
             </form>
+            </div>
         </section>
         <section>
-            <div class="form-box">
+    <div class="form-box">
     <h3>Sign Up</h3>
     <form action="#" method="post">
-    <label for="first-name" class="formation">First Name:</label>
-    <input type="text" id="first-name" name="first-name" required>
+    <label for="first-name-signup" class="formation">First Name:</label>
+    <input type="text" id="first-name-signup" name="First" required>
 
-    <label for="last-name" class="formation">Last Name:</label>
-    <input type="text" id="last-name" name="last-name" required>
+    <label for="last-name-signup" class="formation">Last Name:</label>
+    <input type="text" id="last-name-signup" name="Last" required>
 
-    <label for="email" class="formation">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <label for="email-signup" class="formation">Email:</label>
+    <input type="email" id="email-signup" name="emailaddress" required>
 
     <button type="submit" class="submission">Become a Member</button>
-</form> 
-        </section>
+</form>
+</div> 
+    </section>
     </main>
     <footer>
         <div>
@@ -117,6 +119,25 @@
         </div>
         <p>&copy; 2024 The SneakerSwish</p>
         <p>Website: <a href="index.html">SneakerSwish.com</a></p>
+        <div id="social-media">
+            <h4>Follow Us</h4>
+            <a href="#" onclick="shareOnTwitter()" title="Share on Twitter">
+                <img src="Images/twitter.png" alt="Twitter" height="35" width="35">
+            </a>
+            <a href="#" onclick="shareOnFacebook()" title="Share on Facebook">
+                <img src="Images/facebook.png" alt="Facebook" height="35" width="35">
+            </a>
+        </div>
     </footer>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CBS59E5NL2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CBS59E5NL2');
+</script>
+<script src="script.js"></script>
 </body>
 </html>

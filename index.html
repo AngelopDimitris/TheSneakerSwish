@@ -9,19 +9,10 @@
      <meta name="author" content="SneakerSwish">
      <link rel="stylesheet" href="styles.css">
     </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CBS59E5NL2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CBS59E5NL2');
-</script>
-<body>
+    <body>
     <header>
         <div>
-            <img src="Images\SNEAKERSlogo.png" height="150" width="150" alt="sneakerswishlogo" class="logo"> 
+            <img src="Images/SNEAKERSlogo.png" height="150" width="150" alt="sneakerswishlogo" class="logo"> 
             <h1>The SneakerSwish</h1> 
         </div>
         <nav>
@@ -31,7 +22,7 @@
                         <a href="collections.html" class="dropbtn">Collections</a>
                         <div class="dropdown-content">
                             <a href="collections.html">Basketball Shoes</a>
-                            <a href="collections.html">Lifestyle Sneakers</a>
+                            <a href="collections.html#LifestyleSneakers">Lifestyle Sneakers</a>
                         </div>
                     </li>
                 <li><a href="contact.html" class="contactpage">Contact Us</a></li>
@@ -55,45 +46,141 @@
             <ul class="releases">
                 <li class="sneakes">
                     <h3>Nike Dunk Low Grey Fog</h3>
-                    <img src="Images\GreyFog.jpg" height="200" width="250" alt="NikeDunkLowGreyFog" class="sneaks">
+                    <img src="Images/GreyFog.jpg" height="200" width="250" alt="NikeDunkLowGreyFog" class="sneaks">
                     <p>Available Sizes: 7,8,9,10,11,12,13</p>
                     <p>Price: 119$</p>
-                    <p>Description: Perfect for casual and more formal outfits</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>    
                 </li>
                 <li class="sneakes">
                     <h3>Nike Dunk Low Green</h3>
-                    <img src="Images\Dunkgreen.webp" height="200" width="250" alt="NikeDunkLowGreen" class="sneaks">
+                    <img src="Images/Dunkgreen.webp" height="200" width="250" alt="NikeDunkLowGreen" class="sneaks">
                     <p>Available Sizes: 7,8,9,10,11,12,13</p>
                     <p>Price: 119$</p>
-                    <p>Description: Perfect for everyday use</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>
                 </li>
                 <li class="sneakes">
                     <h3>Nike Dunk Low Panda</h3>
-                    <img src="Images\Dunkpanda.png" height="200" width="200" alt="NikeDunkLowPandaBlack/White" class="sneaks">
+                    <img src="Images/Dunkpanda.png" height="200" width="200" alt="NikeDunkLowPandaBlack/White" class="sneaks">
                     <p>Available Sizes: 7,8,9,10,11,12,13</p>
                     <p>Price: 119$</p>
-                    <p>Description:  This basketball icon channels '80s vibes with premium leather in the upper that looks good and breaks in even better.</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>
                 </li>
                 <li class="sneakes">
                     <h3>Air Jordan 3 Retro "Cement Grey"</h3>
-                    <img src="Images\Cementgrey.png" height="200" width="200" alt="AirJordan3RetroCementGreyGrey/White/Black/Red" class="sneaks">
+                    <img src="Images/Cementgrey.png" height="200" width="200" alt="AirJordan3RetroCementGreyGrey/White/Black/Red" class="sneaks">
                     <p>Available Sizes: 8,9,10,13</p>
                     <p>Price: 220$</p>
-                    <p>Description: Clean and supreme, the AJ3 returns with all of its classic style and grace.</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>
                 </li>
                 <li class="sneakes">
                     <h3>Air Jordan 1 Low OG "Oxidized Green"</h3>
-                    <img src="Images\Oxidizedgreen.png" height="200" width="200" alt="AirJordan1LowOGOxidizedGreenWhite/Green" class="sneaks">
+                    <img src="Images/Oxidizedgreen.png" height="200" width="200" alt="AirJordan1LowOGOxidizedGreenWhite/Green" class="sneaks">
                     <p>Available Sizes: 8,10,12,13</p>
                     <p>Price: 140$</p>
-                    <p>Description: Updated color and texture gives the all-time favorite fresh identity while staying true to the original design.</p>
-                </li>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>                
+        </li>
                 <li class="sneakes">
                     <h3>Nike Dunk Low Retro</h3>
-                    <img src="Images\LowRetro.png" height="200" width="200" alt="NikeDunkLowRetroBlue15%off" class="sneaks">
+                    <img src="Images/LowRetro.png" height="200" width="200" alt="NikeDunkLowRetroBlue15%off" class="sneaks">
                     <p>Available Sizes: 7,9,11,12</p>
                     <p>Price: 96.97$</p>
-                    <p>Description: A double-logo on the heel and extra bit of shine combines with plush padding for comfort that lasts.</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>
                 </li>
             </ul>
         </section>
@@ -102,59 +189,172 @@
             <ul class="releases">
                 <li class="sneakes">
                     <h3>Air Force '07</h3>
-                    <img src="Images\airforce07.png" height="200" width="200" alt="AiForce'07White" class="sneaks">
+                    <img src="Images/airforce07.png" height="200" width="200" alt="AiForce'07White" class="sneaks">
                     <p>Available Sizes: 7,8,9,10,13</p>
                     <p>Price: 115$</p>
-                    <p>Description: Clean finishes and the perfect amount of flash to make you shine.</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>
                 </li>
                 <li class="sneakes">
                     <h3>Chuck Taylor All-Star Canvas</h3>
-                    <img src="Images\Allstarcanvas.webp" height="200" width="200" alt="ConverseAllStarBlack" class="sneaks">
+                    <img src="Images/Allstarcanvas.webp" height="200" width="200" alt="ConverseAllStarBlack" class="sneaks">
                     <p>Available Sizes: 8,10,12,13</p>
                     <p>Price: 90$</p>
-                    <p>Description: All-time classics make you shine forever</p>
-                </li>
+
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>                
+        </li>
                 <li class="sneakes">
                     <h3>Nike Air-Max 90</h3>
-                    <img src="Images\Airmax90.png" height="200" width="200" alt="NikeAirMax90White" class="sneaks">
+                    <img src="Images/Airmax90.png" height="200" width="200" alt="NikeAirMax90White" class="sneaks">
                     <p>Available Sizes: 9,11,12,13</p>
                     <p>Price: 130$</p>
-                    <p>Description: Nothing as fly, nothing as comfortable, nothing as proven</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>
                 </li>
                 <li class="sneakes">
                     <h3>Nike Air-Max Plus Drift</h3>
-                    <img src="Images\plusdrift.png" height="200" width="200" alt="NikeAir-MaxPlusDriftBlack/White" class="sneaks">
+                    <img src="Images/plusdrift.png" height="200" width="200" alt="NikeAir-MaxPlusDriftBlack/White" class="sneaks">
                     <p>Available Sizes: 7,8,9</p>
                     <p>Price: 128.97$</p>
-                    <p>Description: A flame-like design adds heat to the streets while airy mesh keeps you cool</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>
                 </li>
                 <li class="sneakes">
                     <h3>Adidas Originals x Bad Bunny Gazelle San Juan</h3>
-                <img src="Images\Sanjuan.jpg" height="200" width="200" alt="AdidasOriginalsxBadBunnyGazelleSanJuanBlue" class="sneaks">
+                <img src="Images/Sanjuan.jpg" height="200" width="200" alt="AdidasOriginalsxBadBunnyGazelleSanJuanBlue" class="sneaks">
                     <p>Available Sizes: 8,9,11,12</p>
                     <p>Price: 130$</p>
-                    <p>Description: A must-have for every sneaker lover</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>
                 </li>
                 <li class="sneakes">
                     <h3>ADIDAS Samba ADV Shoes</h3>
-                    <img src="Images\Samba.webp" height="200" width="200" alt="ADIDASSambaADVShoesWhite/Brown" class="sneaks">
+                    <img src="Images/Samba.webp" height="200" width="200" alt="ADIDASSambaADVShoesWhite/Brown" class="sneaks">
                     <p>Available Sizes: 9,10,11,12</p>
                     <p>Price: 99.99$</p>
-                    <p>Description: Elegant sneaker for elegant outfits</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>
                 </li>
                 <li class="sneakes">
                     <h3>Rebook Club 85 Vintage</h3>
-                    <img src="Images\Rebookvintage.webp" height="200" width="200" alt="RebookClub85VintageBeige" class="sneaks">
+                    <img src="Images/Rebookvintage.webp" height="200" width="200" alt="RebookClub85VintageBeige" class="sneaks">
                     <p>Available Sizes: 8,9,10,12,13,12.5</p>
                     <p>Price: 119$</p>
-                    <p>Description: Step into the to wear rebooks classics</p>
+                    <button class="order-btn">Order Now</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="modal" id="orderModal">
+                <h3>Place Your Order</h3>
+                <form id="orderForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Address" required>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option value="credit">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button type="submit">Submit</button>
+            </form>
+            </div>
                 </li>
                 </ul>
         </section>
     </main>
     <footer>
         <div>
-            <img src="Images\SNEAKERSlogo.png" height="150" width="150" alt="sneakerswishlogo">
+            <img src="Images/SNEAKERSlogo.png" height="150" width="150" alt="sneakerswishlogo">
             <h1>The SneakerSwish</h1> 
         </div>
         <div id="helptool">
@@ -170,6 +370,25 @@
         </div>
         <p>&copy; 2024 The SneakerSwish</p>
         <p>Website: <a href="index.html">SneakerSwish.com</a></p>
+        <div id="social-media">
+            <h4>Follow Us</h4>
+            <a href="#" onclick="shareOnTwitter()" title="Share on Twitter">
+                <img src="Images/twitter.png" alt="Twitter" height="35" width="35">
+            </a>
+            <a href="#" onclick="shareOnFacebook()" title="Share on Facebook">
+                <img src="Images/facebook.png" alt="Facebook" height="35" width="35">
+            </a>
+        </div>
     </footer>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBS59E5NL2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-CBS59E5NL2');
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -153,6 +153,7 @@ select {
     margin-bottom: 10px; /* adds space below inputs  */
 }
 
+
 .submission { /* At the html document I have added a class="submission" inside every button command at the contact.html because there is button command at the index.html as well and ".submission" refers to that */
     background-color: #4CAF50; /* green submit button */
     color: white; /* text color white */
@@ -197,3 +198,71 @@ li a:hover, .dropdown:hover .dropbtn {
     justify-content: space-between; /* Space out the sections */
     margin: 20px; /* Optional: Adds margin around the main section */
 }
+html {
+    scroll-behavior: smooth;
+}
+/* Style for the modal (popup) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 60px; /* Position the modal at the top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black with some opacity */
+  }
+  
+  /* Modal content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption under the image */
+  #caption {
+    text-align: center;
+    color: #ccc;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  /* Close button (x) */
+  .close {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Style for image gallery */
+  .releases {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid layout for responsiveness */
+    gap: 20px;
+  }
+  
+  .sneakes img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  }
+  
+  .sneakes img:hover {
+    transform: scale(1.1); /* Enlarge the image slightly when hovered */
+  }
