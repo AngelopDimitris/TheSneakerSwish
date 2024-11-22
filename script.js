@@ -9,21 +9,39 @@ function shareOnFacebook() {
     const url = encodeURIComponent('https://www.sneakerswish.com');
     window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, 'facebook-share-dialog', 'width=800,height=600');
 }
-document.querySelectorAll('.order-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        document.getElementById('overlay').style.display = 'block';
-        document.getElementById('orderModal').style.display = 'block';
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all order buttons and their respective modals
+    const orderButtons = document.querySelectorAll('.order-btn');
+    const overlays = document.querySelectorAll('.overlay');
+    const modals = document.querySelectorAll('.modal');
+    const forms = document.querySelectorAll('form');
+
+    orderButtons.forEach((button, index) => {
+        const overlay = overlays[index];
+        const modal = modals[index];
+
+        // Show modal and overlay on button click
+        button.addEventListener('click', () => {
+            overlay.style.display = 'block';
+            modal.style.display = 'block';
+        });
+
+        // Hide modal and overlay when overlay is clicked
+        overlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            modal.style.display = 'none';
+        });
     });
-});
 
-document.getElementById('orderForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Your order is confirmed!');
-    document.getElementById('overlay').style.display = 'none';
-    document.getElementById('orderModal').style.display = 'none';
-});
+    // Add submit event listener to each form
+    forms.forEach((form, index) => {
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent the form from actually submitting
+            alert('Your order is confirmed!'); // Show confirmation message
 
-document.getElementById('overlay').addEventListener('click', () => {
-    document.getElementById('overlay').style.display = 'none';
-    document.getElementById('orderModal').style.display = 'none';
+            // Close the modal and overlay
+            overlays[index].style.display = 'none';
+            modals[index].style.display = 'none';
+        });
+    });
 });

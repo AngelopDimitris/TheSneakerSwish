@@ -9,7 +9,7 @@ header {
     display: flex; /* uses flexbox for the headers */
     justify-content: space-between; /* spaces items evenly */
     align-items: center; /* centers items in the header */
-    background-color:#4CAF50; /* sets background color to faded green */
+    background-color:#2E7D32; /* sets background color to faded green */
     color: #fff; /* sets text color to white */
     padding: 20px; /* adds padding of 20px inside the header */
 }
@@ -24,19 +24,25 @@ header {
     margin: 0%; /* removes margin */
 }
 nav ul li {
-    margin: 0 15px; /* adds space between list items */
+    margin: 0 40px; /* adds space between list items */
+    
 }
 nav ul li a {
     color: #fff; /* colors text white for the anchors */
     text-decoration: none; /* removes underline from the anchors */
+    font-weight: bold;
+    font-size: 16px;
 }
 nav ul li a:hover {
     text-decoration: underline; /* underlines links/anchors on hover */
+    color: gold; /* Gold color on hover for a more noticeable effect */
+
 }
 .slogan { /* At the html document I have added a class="slogan" in the "blockquote" command and ".slogan" refers to that */
     text-align: center; /* centers the .slogan text */
     font-size: 24px; /* sets the font size for the .slogan to 24px */
     font-style: italic; /* makes the .slogan text italic */
+    font-weight: bold;
     margin: 0 20px; /* adds space at the left and right elements (horizontal) */
     animation: blockquoteMovement 2s ease-in-out infinite;
 }
@@ -66,7 +72,7 @@ p {
     margin-right: 20px; /* adds space on the right for the button */
 }
 button {
-    background-color:#4CAF50; /* sets button's background color to faded green */
+    background-color:#2E7D32; /* sets button's background color to faded green */
     color: white; /* solor text white */
     border: none; /* removes border from button */
     padding: 10px 20px; /* adds padding inside buttons */
@@ -118,15 +124,27 @@ p {
     color: black; /* set paragraph text to black */
 }
 footer {
-    background-color: #4CAF50; /* sets footer background to faded green */
-    color: white; /* sets footer color text to white */
-    text-align: center; /* centers text in footer */
-    padding: 20px; /* adds padding of 20px inside the footer */
+    background-color: #2E7D32; /* darker green for better contrast */
+    color: white; /* keep text white for contrast */
+    text-align: center;
+    padding: 20px;
 }
 
 footer img {
-    height: 100px; /* sets height of footer image */
-    width: 100px;  /* sets width of footer image */
+    height: 100px;
+    width: 100px;
+}
+
+footer a {
+    color: white; /* Ensure links are white */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:focus,
+footer a:hover {
+
+    text-decoration: underline; /* underlines links/anchors on hover */
+    color: gold; /* Gold color on hover for a more noticeable effect */
 }
 .form-box { /* At the html document I have added a class="form-box" inside every section's form and ".form" refers to that */
     background-color: white; /* sets background to white for the forms */
