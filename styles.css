@@ -148,7 +148,7 @@ footer a:hover {
 }
 .form-box { /* At the html document I have added a class="form-box" inside every section's form and ".form" refers to that */
     background-color: white; /* sets background to white for the forms */
-    border: 2px solid #4CAF50; /* sets border color to green */
+    border: 2px solid #2E7D32; /* sets border color to green */
     border-radius: 8px; /* make corners lokk rounded */
     padding: 15px; /* adds padding inside the forms */ 
     margin: 20px auto; /* centers the forms */
@@ -173,7 +173,7 @@ select {
 
 
 .submission { /* At the html document I have added a class="submission" inside every button command at the contact.html because there is button command at the index.html as well and ".submission" refers to that */
-    background-color: #4CAF50; /* green submit button */
+    background-color: #2E7D32; /* green submit button */
     color: white; /* text color white */
     padding: 10px 15px; /* adds padding inside button */
     border-radius: 4px; /* make corners look rounded */
