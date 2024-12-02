@@ -1,5 +1,5 @@
 function shareOnTwitter() {
-    const url = encodeURIComponent('https://www.sneakerswish.com');  //website URL
+    const url = encodeURIComponent('https://www.sneakerswish.com');  
     const text = encodeURIComponent('Check out SneakerSwish for amazing sneakers!');  
     const twitterUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
     window.open(twitterUrl, 'twitter-share-dialog', 'width=800,height=600');
@@ -45,3 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+    // Function to handle form submissions
+    function showThankYouMessage(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        alert("Thank you for your submission!");
+    }
+
+    // Attach the event listener to each button
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".submission").forEach(button => {
+            button.addEventListener("click", showThankYouMessage);
+        });
+    });
